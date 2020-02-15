@@ -15,4 +15,4 @@ Turns sh-spacer elements in SharpSpring emails into modified buttons. This allow
 </ol>
 
 
-![HowTo](https://share.getcloudapp.com/jkuK7WwO?branding=true&amp;embed=true&amp;title=true)
+![HowTo](https://share.getcloudapp.com/jkuK7WwO)
