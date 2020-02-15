@@ -15,4 +15,4 @@ Turns sh-spacer elements in SharpSpring emails into modified buttons. This allow
 </ol>
 
 
-![HowTo](Screen Recording 2020-02-15 at 05.19 PM.gif)
+![HowTo](/Screen Recording 2020-02-15 at 05.19 PM.gif)
