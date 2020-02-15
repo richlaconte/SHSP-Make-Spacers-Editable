@@ -13,3 +13,6 @@ Turns sh-spacer elements in SharpSpring emails into modified buttons. This allow
   <li>The email should automatically save.</li>
   <li>Receive praise.</li>
 </ol>
+
+
+![HowTo](https://p88.f2.n0.cdn.getcloudapp.com/items/jkuK7WwO/Screen+Recording+2020-02-15+at+05.19+PM.gif?v=d2059ce270cd081d3100730f9ae49447)
