@@ -18,4 +18,4 @@ Turns sh-spacer elements in SharpSpring emails into modified buttons. This allow
 <br>
 
 <h3>Video Walkthrough:</h3>
-![HowTo](https://raw.githubusercontent.com/richlaconte/SHSP-Make-Spacers-Editable/master/Screen%20Recording%202020-02-15%20at%2005.19%20PM.gif)
+<img src="https://raw.githubusercontent.com/richlaconte/SHSP-Make-Spacers-Editable/master/Screen%20Recording%202020-02-15%20at%2005.19%20PM.gif">
