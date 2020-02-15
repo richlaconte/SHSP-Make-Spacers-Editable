@@ -7,6 +7,8 @@ const makeSpacersEditable = () => {
         const height = spacers[i].height;
         spacers[i].outerHTML = editableSpaceHtml(height);
     }
+    let saveBtn = document.getElementById("saveEmail");
+    saveBtn.click();
     console.log(`Made ${counter} spacers editable. Enjoy.`);
 }
 
