@@ -9,7 +9,7 @@ Turns sh-spacer elements in SharpSpring emails into modified buttons. This allow
   <li>Right click on the page and click "inspect" to open your browser's dev tools.</li>
   <li>Click on the "console" tab.</li>
   <li>Make sure your scope is set to "top":</li>
-  <li>Paste the code from "script.js" into the console and hit enter.</li>
+  <li>Paste the code from <a href="https://raw.githubusercontent.com/richlaconte/SHSP-Make-Spacers-Editable/master/script.js">"script.js"</a> into the console and hit enter.</li>
   <li>The email should automatically save.</li>
   <li>Receive praise.</li>
 </ol>
