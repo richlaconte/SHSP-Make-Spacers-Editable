@@ -1,5 +1,5 @@
 # SHSP-Make-Spacers-Editable
-Turns sh-spacer elements in SharpSpring emails into modified buttons. This allows the spacers to be moved, copied and deleted.
+Turns class='non-etitable' elements in SharpSpring emails into modified buttons. This allows the spacers to be moved, copied and deleted.
 
 <h3>The problem:</h3>
 <p>Spacer elements in SharpSpring are not editable. Partners often call in asking how to remove extra spacing in their emails.</p>
@@ -11,7 +11,7 @@ Turns sh-spacer elements in SharpSpring emails into modified buttons. This allow
   <li>Make sure your scope is set to "top":</li>
   <li>Paste the code from <a href="https://raw.githubusercontent.com/richlaconte/SHSP-Make-Spacers-Editable/master/script.js">"script.js"</a> into the console and hit enter.</li>
   <li>The email should automatically save.</li>
-  <li>Receive praise.</li>
+  <li>Spacers should now be editable.</li>
 </ol>
 
 <br>
