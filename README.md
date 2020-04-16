@@ -6,9 +6,9 @@ Turns class='non-etitable' elements in SharpSpring emails into modified buttons.
 
 <h3>How to use:</h3>
 <ol>
-  <li>Right click on the page and click "inspect" to open your browser's dev tools.</li>
+  <li>Right click on the page and click "inspect" to open your browser's development tools.</li>
   <li>Click on the "console" tab.</li>
-  <li>Make sure your scope is set to "top":</li>
+  <li>Make sure your scope is set to "top" by clicking the scope dropdown and selecting "top".</li>
   <li>Paste the code from <a href="https://raw.githubusercontent.com/richlaconte/SHSP-Make-Spacers-Editable/master/script.js">"script.js"</a> into the console and hit enter.</li>
   <li>The email should automatically save.</li>
   <li>Spacers should now be editable.</li>
