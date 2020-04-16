@@ -22,23 +22,19 @@ const editableSpaceHtml = (height) => {
 }
 
 ( function() {
-    if (document.getElementById("previewEmail").contentDocument.getElementsByClassName('non-editable').length > 0) {
-        const spacers = document.getElementById("previewEmail").contentDocument.getElementsByClassName('non-editable');
+    const spacers = document.getElementById("previewEmail").contentDocument.getElementsByClassName('non-editable');
 
-        let counter = 0;
+    let counter = 0;
 
-        for (let i = 0; i < spacers.length; i++) {
-            if (!spacers[i].classList.contains('madeEditable')) {
-                const height = spacers[i].height;
-                spacers[i].outerHTML = editableSpaceHtml(height);
-                counter++;
-            }
+    for (let i = 0; i < spacers.length; i++) {
+        if (!spacers[i].classList.contains('madeEditable')) {
+            const height = spacers[i].height;
+            spacers[i].outerHTML = editableSpaceHtml(height);
+            counter++;
         }
-        const saveBtn = document.getElementById("saveEmail");
-        saveBtn.click();
-        console.log(`Found ${spacers.length} spacers.`)
-        console.log(`Made ${counter} spacers editable.`);
-    } else {
-        console.log(`No spacers found.`);
     }
+    const saveBtn = document.getElementById("saveEmail");
+    saveBtn.click();
+    console.log(`Found ${spacers.length} spacers.`)
+    console.log(`Made ${counter} spacers editable.`);
 })();
