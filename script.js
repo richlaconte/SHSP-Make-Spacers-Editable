@@ -1,24 +1,10 @@
-const makeSpacersEditable = () => {
-    const spacers = document.getElementById("previewEmail").contentWindow.document.querySelectorAll("[sh-spacer]");
-    let counter = 0;
-
-    for (let i = 0; i < spacers.length; i++) {
-        counter++;
-        const height = spacers[i].height;
-        spacers[i].outerHTML = editableSpaceHtml(height);
-    }
-    let saveBtn = document.getElementById("saveEmail");
-    saveBtn.click();
-    console.log(`Made ${counter} spacers editable. Enjoy.`);
-}
-
 const editableSpaceHtml = (height) => {
     return `<td><div sh-content-block="Button" sh-version="2" class="ui-draggable">
             <table width="100%" border="0" cellspacing="0" cellpadding="0" 
                 style="padding-left: 0px; padding-right: 0px; mso-padding-left-alt: 0px; mso-padding-right-alt: 0px;">
                     <tbody>
                         <tr>
-                            <td height="${height}" width="100%" style="font-size: 1px; line-height: 1px;" class="non-editable">
+                            <td height="${height}" width="100%" style="font-size: 1px; line-height: 1px;" class="non-editable madeEditable">
                                 <br>
                             </td>
                         </tr>
@@ -35,4 +21,24 @@ const editableSpaceHtml = (height) => {
     </div><td>`;
 }
 
-makeSpacersEditable();
+( function() {
+    if (document.getElementById("previewEmail").contentDocument.getElementsByClassName('non-editable').length > 0) {
+        const spacers = document.getElementById("previewEmail").contentDocument.getElementsByClassName('non-editable');
+
+        let counter = 0;
+
+        for (let i = 0; i < spacers.length; i++) {
+            if (!spacers[i].classList.contains('madeEditable')) {
+                const height = spacers[i].height;
+                spacers[i].outerHTML = editableSpaceHtml(height);
+                counter++;
+            }
+        }
+        const saveBtn = document.getElementById("saveEmail");
+        saveBtn.click();
+        console.log(`Found ${spacers.length} spacers.`)
+        console.log(`Made ${counter} spacers editable.`);
+    } else {
+        console.log(`No spacers found.`);
+    }
+})();
